@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cronograma de Estudos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+
+      th, td {
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #dddddd;
+      }
+
+      .weekend {
+        background-color: #f2f2f2;
+      }
+
+      .difficulties {
+        background-color: #ffcccb;
+      }
+
+      input[type=checkbox] {
+        position: relative;
+        -webkit-appearance: none;
+        background-color: grey;
+        width: 40px;
+        height: 20px;
+        border-radius: 20px;
+        outline: none;
+        transition: background-color .3s, border .3s;
+        border: 2px solid green;
+    }
+
+    input[type=checkbox]:before {
+        position: absolute;
+        content: '';
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        background-color: white;
+        transition: transform .3s;
+    }
+
+    input[type=checkbox]:checked:before {
+        transform: translateX(20px);
+        background-color: green;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Cronograma de Estudos</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Assuntos</th>
+          <th>Concluído</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sábado, 15/04</td>
+          <td>14:00 - 17:00</td>
+          <td>Introdução aos Limites</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="weekend">
+          <td>Domingo, 16/04</td>
+          <td>14:00 - 17:00</td>
+          <td>Continuidade e Descontinuidade</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Segunda, 17/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Limites Laterais e Infinitos</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Terça, 18/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Limites Trigonométricos</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="difficulties">
+          <td>Quarta, 19/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Exercícios de Limites Trigonométricos e Logarítmicos</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Quinta, 20/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Teorema do Confronto e Limites Indeterminados</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Sexta, 21/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Revisão dos Tópicos Anteriores</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="weekend">
+        <tr>
+          <td>Sexta, 21/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Revisão dos Tópicos Anteriores</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="weekend">
+          <td>Sábado, 22/04</td>
+          <td>14:00 - 17:00</td>
+          <td>Exercícios e Dúvidas</td>
+          <td><input type="checkbox"></td>
+        <tr class="weekend">
+          <td>Domingo, 23/04</td>
+          <td>14:00 - 17:00</td>
+          <td>Exercícios e Dúvidas</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Segunda, 24/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Limites com Funções Trigonométricas e Logarítmicas</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Terça, 25/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Regra de L'Hôpital</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="difficulties">
+          <td>Quarta, 26/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Exercícios de Limites com Funções Trigonométricas e Logarítmicas</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Quinta, 27/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Limites Infinitos com Funções Trigonométricas e Logarítmicas</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Sexta, 28/04</td>
+          <td>8:00 - 11:00</td>
+          <td>Revisão dos Tópicos Anteriores</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="weekend">
+          <td>Sábado, 29/04</td>
+          <td>14:00 - 17:00</td>
+          <td>Exercícios e Dúvidas</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="weekend">
+          <td>Domingo, 30/04</td>
+          <td>14:00 - 17:00</td>
+          <td>Revisão Final e Resolução de Questões</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
